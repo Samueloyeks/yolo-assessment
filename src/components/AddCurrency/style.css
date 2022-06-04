@@ -1,0 +1,29 @@
+.add-currency {
+  width: 100%;
+  height: 100%;
+  padding: 10% 10%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-currency-form,
+.add-currency-input {
+  width: 100%;
+}
+
+.add-currency-text {
+  color: gray;
+  text-align: center;
+}
+
+.MuiButton-root {
+  background-color: #fe4b24 !important;
+  width: 100% !important;
+  border-radius: 20px !important;
+  margin-top: 10px !important;
+  color: white !important;
+  padding: 10px !important;
+}

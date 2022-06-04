@@ -1,0 +1,124 @@
+* {
+  font-family: system-ui;
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+}
+
+.info {
+  height: 15%;
+  background-color: white;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2% 7%;
+  overflow: scroll;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-all;
+}
+
+.info::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  height: 15%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main {
+  background-image: url(../../public/figure.png), url(../../public/bg.png);
+  background-position: bottom center, 230% top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 32%, 70% auto;
+  background-color: #2a0a4a;
+  height: 85%;
+  box-sizing: border-box;
+  padding: 2% 7%;
+}
+
+.content-wrapper {
+  position: relative;
+  height: 81%;
+}
+
+.add-crypto {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-top: inherit;
+  margin-right: inherit;
+  background-color: white;
+  border-radius: 5px;
+  height: 50%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 0px) {
+  .add-crypto,
+  .crypto-list {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .crypto-list {
+    bottom: 0;
+  }
+
+  .main {
+    background-image: url(../../public/bg.png);
+    background-position: 230% top;
+    background-repeat:  no-repeat;
+    background-size: 70% auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .add-crypto {
+    height: 50%;
+    width: 50%;
+  }
+
+  .crypto-list {
+    width: 50%;
+    height: 100%;
+  }
+
+  .main {
+    background-image: url(../../public/bg.png);
+    background-position: 230% top;
+    background-repeat:  no-repeat;
+    background-size: 70% auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .add-crypto {
+    height: 50%;
+    width: 30%;
+  }
+
+  .crypto-list {
+    width: 50%;
+    height: 100%;
+  }
+
+  .main {
+    background-image: url(../../public/figure.png), url(../../public/bg.png);
+    background-position: bottom center, 230% top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 32%, 70% auto;
+    background-color: #2a0a4a;
+    height: 85%;
+    box-sizing: border-box;
+    padding: 2% 7%;
+  }
+}
